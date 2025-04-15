@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./assets/fonts/Norse-Bold.otf");
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: "sans-serif";
 }
 
 .main-container {
@@ -11,25 +17,69 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
+    flex: 1;
     background-image: url("./assets/images/green-leaf-plant.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     height: 100vh;
-    width: 35vw;
+    /* width: 35vw; */
 }
 
 .banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 30%;
+    padding: 10px 0px;
+    gap: 16px;
 }
 
 .banner-container > img {
     max-height: 150px;
 }
 
-.text-container {
+.banner-text {
+    font-family: "Norse-Bold", "sans-serif";
+    font-size: 8rem;
+}
+
+.image-credit-container {
     display: flex;
+    justify-content: center;
+}
+
+.image-credit-text {
+    font-size: small;
+    font-weight: lighter;
+    color: #dad9d9;
+}
+
+.image-credit-text > a {
+    color: inherit;
+}
+
+.sign-up-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: #f9fafb;
+}
+
+.text-top-container, .form-container {
+    padding-left: 5%;
+}
+
+.text-top-container {
+    /* padding: 2% 15% 2% 5%; */
+    max-width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
