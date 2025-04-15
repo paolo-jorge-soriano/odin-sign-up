@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-image: url("./assets/images/green-leaf-plant.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    width: 35vw;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container > img {
+    max-height: 150px;
+}
+
+.text-container {
+    display: flex;
+}
